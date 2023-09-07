@@ -19,3 +19,13 @@ calc = (numOne, numTwo, action) => {
         return numOne - numTwo;
     }
 };
+// ex - 3 
+let logDetails;
+// logDetails=(logDoc:{name: string, age:number})=>
+// {
+//     console.log(`${logDoc.name} is ${logDoc.age}`);
+// }
+// fun with singnature and type alise
+logDetails = (logDoc) => {
+    console.log(`${logDoc.name} is ${logDoc.age}`);
+};

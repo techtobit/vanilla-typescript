@@ -22,3 +22,22 @@ calc = (numOne: number, numTwo: number, action: string) => {
         return numOne - numTwo;
     }
 }
+
+
+// ex - 3 
+let logDetails: (obj:{name:string, age:number}) => void;
+type person = {name: string, age:number};
+
+// logDetails=(logDoc:{name: string, age:number})=>
+// {
+//     console.log(`${logDoc.name} is ${logDoc.age}`);
+    
+// }
+
+
+// fun with singnature and type alise
+logDetails=(logDoc:person)=>
+{
+    console.log(`${logDoc.name} is ${logDoc.age}`);
+    
+}
