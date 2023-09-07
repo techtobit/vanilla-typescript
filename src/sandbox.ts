@@ -5,17 +5,17 @@ const chir = (diametar:number) =>
   return diametar * Math.PI;
 }
 
-console.log(chir(7.5));
+// console.log(chir(7.5));
 
 
 let arrays = ['X', 'Y', 'Z'];
 // arrays.push('two')
 // arrays.push(5) //error
-console.log(arrays);
+// console.log(arrays);
 
 let mixArray = ['X', 1, true];
 mixArray.push('Y', 2, false);
-console.log(mixArray);
+// console.log(mixArray);
 
 
 // unione type with object 
@@ -27,7 +27,7 @@ console.log(mixArray);
 // correct one 
 let arr  : (string | number | boolean)[]=[];
 arr.push('Faruk', 20, true);
-console.log(arr);
+// console.log(arr);
 
 
 let obj : object;
@@ -37,7 +37,7 @@ obj = {
   sell : true,
 }
 
-console.log(obj);
+// console.log(obj);
 
 
 
@@ -53,6 +53,6 @@ object = {
   student : false,
 }
 
-console.log(object);
+// console.log(object);
 
 
