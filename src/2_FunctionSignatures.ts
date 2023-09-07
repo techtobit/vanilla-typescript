@@ -1,9 +1,9 @@
-let greet : (a:string, b:string) => void;
+let greetS : (a:string, b:string) => void;
 // greet is a fun singnature.if use greet fun anywhare
 // delclaretion should be follow this parameters convations
 
 // ex - 1 
-greet = (name: string, greeting: string) => {
+greetS = (name: string, greeting: string) => {
     console.log(`${name} says ${greeting}`);
 }
 
@@ -25,7 +25,7 @@ calc = (numOne: number, numTwo: number, action: string) => {
 
 
 // ex - 3 
-let logDetails: (obj:{name:string, age:number}) => void;
+let logDetailsPros: (obj:{name:string, age:number}) => void;
 type person = {name: string, age:number};
 
 // logDetails=(logDoc:{name: string, age:number})=>
@@ -36,7 +36,7 @@ type person = {name: string, age:number};
 
 
 // fun with singnature and type alise
-logDetails=(logDoc:person)=>
+logDetailsPros=(logDoc:person)=>
 {
     console.log(`${logDoc.name} is ${logDoc.age}`);
     

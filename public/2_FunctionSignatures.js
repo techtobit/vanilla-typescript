@@ -1,9 +1,9 @@
 "use strict";
-let greet;
+let greetS;
 // greet is a fun singnature.if use greet fun anywhare
 // delclaretion should be follow this parameters convations
 // ex - 1 
-greet = (name, greeting) => {
+greetS = (name, greeting) => {
     console.log(`${name} says ${greeting}`);
 };
 // ex : 2
@@ -20,12 +20,12 @@ calc = (numOne, numTwo, action) => {
     }
 };
 // ex - 3 
-let logDetails;
+let logDetailsPros;
 // logDetails=(logDoc:{name: string, age:number})=>
 // {
 //     console.log(`${logDoc.name} is ${logDoc.age}`);
 // }
 // fun with singnature and type alise
-logDetails = (logDoc) => {
+logDetailsPros = (logDoc) => {
     console.log(`${logDoc.name} is ${logDoc.age}`);
 };
