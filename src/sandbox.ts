@@ -19,6 +19,17 @@ console.log(mixArray);
 
 
 // unione type with object 
+
+// error one 
+// let arr  : (string | number | boolean)[];
+// arr.push('Faruk');
+
+// correct one 
+let arr  : (string | number | boolean)[]=[];
+arr.push('Faruk', 20, true);
+console.log(arr);
+
+
 let obj : object;
 obj = {
   types : 'New',
