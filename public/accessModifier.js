@@ -30,5 +30,5 @@ let myInvoices = [];
 myInvoices.push(invsOne);
 myInvoices.push(invsTwo);
 myInvoices.forEach(inv => {
-    console.log(inv.client, inv.amount, inv.format());
+    // console.log(inv.client,  inv.amount,  inv.format());
 });
