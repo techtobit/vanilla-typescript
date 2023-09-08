@@ -9,7 +9,7 @@ const amount = document.querySelector('#amount');
 // ListTemplate vid:17 - 
 const ul = document.querySelector('ul');
 const list = new ListTemplate(ul);
-// Tupuls vid:20 -
+// Tupls vid:20 -
 let values;
 values = [tofrom.value, details.value, amount.valueAsNumber];
 form.addEventListener('submit', (e) => {

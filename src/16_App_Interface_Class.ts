@@ -14,7 +14,7 @@ const amount = document.querySelector('#amount') as HTMLInputElement;
 const ul = document.querySelector('ul')!;
 const list = new ListTemplate(ul);
 
-// Tupuls vid:20 -
+// Tupls vid:20 -
 let values : [string, string, number];
 values = [tofrom.value,details.value, amount.valueAsNumber];
 
