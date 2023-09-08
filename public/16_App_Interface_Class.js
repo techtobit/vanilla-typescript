@@ -9,14 +9,17 @@ const amount = document.querySelector('#amount');
 // ListTemplate vid:17 - 
 const ul = document.querySelector('ul');
 const list = new ListTemplate(ul);
+// Tupuls vid:20 -
+let values;
+values = [tofrom.value, details.value, amount.valueAsNumber];
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     let doc;
     if (type.value === 'invoice') {
-        doc = new InvoiceInterface(tofrom.value, details.value, amount.valueAsNumber);
+        doc = new InvoiceInterface(...values);
     }
     else {
-        doc = new PaymentClasses(tofrom.value, details.value, amount.valueAsNumber);
+        doc = new PaymentClasses(...values);
     }
     // console.log(doc);
     list.render(doc, type.value, 'start');

@@ -14,6 +14,10 @@ const amount = document.querySelector('#amount') as HTMLInputElement;
 const ul = document.querySelector('ul')!;
 const list = new ListTemplate(ul);
 
+// Tupuls vid:20 -
+let values : [string, string, number];
+values = [tofrom.value,details.value, amount.valueAsNumber];
+
 form.addEventListener('submit', (e: Event) => 
 {
     e.preventDefault();
@@ -21,11 +25,11 @@ form.addEventListener('submit', (e: Event) =>
 
     if(type.value === 'invoice')
     {
-        doc = new InvoiceInterface(tofrom.value,details.value, amount.valueAsNumber);
+        doc = new InvoiceInterface(...values);
     }
     else
     {
-        doc = new PaymentClasses(tofrom.value,details.value, amount.valueAsNumber);
+        doc = new PaymentClasses(...values);
     }
 
     // console.log(doc);
